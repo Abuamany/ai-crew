@@ -31,6 +31,9 @@ with st.sidebar:
 # Instantiate your tools: Search engine tool duckduckgo-search
 search_tool = DuckDuckGoSearchRun()
 
+# Use the selected API key in the agent initialization
+llm = ChatOpenAI(model_name="gpt-4", api_key=selected_key)
+
 # enter blogpost article
 blogpost = st.text_area("Enter blogpost article here", height=200)
 
