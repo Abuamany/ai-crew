@@ -2,6 +2,7 @@ import os
 import streamlit as st
 from crewai import Agent, Task, Crew, Process
 from langchain.tools import DuckDuckGoSearchRun
+from langchain.chat_models import ChatOpenAI
 
 __import__('pysqlite3')
 import sys
