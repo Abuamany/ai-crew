@@ -34,7 +34,7 @@ if blogpost == "":
     st.stop()
 else:
     # Use the selected API key in the agent initialization
-    llm = ChatOpenAI(model_name="gpt-4", api_key=selected_key)
+    llm = ChatOpenAI(model_name="gpt-4o", api_key=selected_key)
 
     # Define your agents with roles and goals
     editor = Agent(
